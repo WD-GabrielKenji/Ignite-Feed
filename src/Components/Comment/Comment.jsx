@@ -1,20 +1,21 @@
 import styles from './Comment.module.css';
 
+import { Avatar } from '../Avatar/Avatar';
 import { ThumbsUp, Trash } from 'phosphor-react';
 
 export function Comment(){
   return (
     <div className={styles.comment}>
-      <img 
-        src="https://avatars.githubusercontent.com/u/77596710?v=4" 
-        alt="Avatar" 
+      <Avatar 
+        hasBoder={false}
+        src="https://avatars.githubusercontent.com/u/2254731?v=4" 
       />
 
       <div className={styles.commentBox}>
         <div className={styles.commentContent}>
           <header>
             <div className={styles.authorAndTime}>
-              <strong>Gabriel Kenji</strong>
+              <strong>Diego Fernandes</strong>
 
               <time 
                 title='09 de Janeiro às 20:47h'
@@ -29,7 +30,7 @@ export function Comment(){
             </button>
           </header>
 
-          <p>Muito bom Devon, parabéns!! 👏👏</p>
+          <p>Muito bom Gabriel, parabéns!! 👏👏</p>
         </div>
 
         <footer>
